@@ -6,6 +6,6 @@ build/
 dist/
 tailwindcss
 node_modules/
-# The javascripts are created from the typescripts & placed in source to be
-# processed by tailwindCSS
+# The raw javascripts are processed by bun & placed in source to be
+# used by Middleman
 source/javascripts/

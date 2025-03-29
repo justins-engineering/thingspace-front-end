@@ -1,0 +1,28 @@
+%tr.divide-x.divide-slate-300.dark:divide-slate-700
+  %td.p-1 Home
+  %td.p-1 123412341234123
+  %td.p-1 56785678567856785678
+  %td.p-1 89089089089
+  %td.p-1 Disconnected
+  %td.p-1
+    %time 10/04/2023 02:12:03 PM
+  %td.p-1 12 MB
+%tr.divide-x.divide-slate-300.dark:divide-slate-700
+  %td.p-1 Field
+  %td.p-1 123412341234124
+  %td.p-1 56785678567856785679
+  %td.p-1 89089089090
+  %td.p-1 Connected
+  - time = Time.now
+  %td.p-1
+    %time{datetime: Time.now.to_s}
+      = time.strftime('%Y/%m/%d %H:%M (%Z)')
+  %td.p-1 150 MB
+%tr.divide-x.divide-slate-300.dark:divide-slate-700
+  %td.p-1 Toga
+  %td.p-1 123412341234125
+  %td.p-1 56785678567856785680
+  %td.p-1 89089089091
+  %td.p-1 Disconnected
+  %td.p-1 10/04/2023 02:12:03 PM
+  %td.p-1 78 MB
