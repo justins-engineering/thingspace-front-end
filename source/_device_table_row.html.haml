@@ -1,11 +1,9 @@
-%tr.divide-x.divide-slate-300.dark:divide-slate-700
-  %td.p-1 Home
-  %td.p-1 123412341234123
-  %td.p-1 56785678567856785678
-  %td.p-1 89089089089
-  %td.p-1 Disconnected
-  %td.p-1 10/04/2023 02:12:03 PM
-  %td.p-1 12 MB
-  -# %td.p-1.text-center
-  -#   = link_to '/' do
-  -#     %i.fa-solid.fa-file-arrow-down
+%template{'x-for': "device in devices"}
+  %tr.divide-x.divide-slate-300.dark:divide-slate-700
+    %td.p-1{'x-text': "device.location"}
+    %td.p-1{'x-text': "device.did"}
+    %td.p-1{'x-text': "device.iccid"}
+    %td.p-1{'x-text': "device.msisdn"}
+    %td.p-1{'x-text': "device.con"}
+    %td.p-1{'x-text': "device.lcd"}
+    %td.p-1{'x-text': "device.usage"}

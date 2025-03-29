@@ -1,12 +1,12 @@
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
-ts_files = './typescripts/*.ts'
+js_files = './javascripts/*.js'
 out_dir = './dist'
 
 activate :external_pipeline,
          name: :bun_build,
-         command: "bun build --entrypoints #{ts_files} --outdir ./source/javascripts " \
+         command: "bun build --entrypoints #{js_files} --outdir ./source/javascripts " \
                   "#{build? ? '--minify --sourcemap=external' : '--watch --sourcemap=linked'}",
          latency: 2,
          source: out_dir
@@ -26,7 +26,7 @@ activate :external_pipeline,
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
-page '/terminal.html', layout: 'terminal'
+page '/device_table.html', layout: false
 
 # Proxy pages
 # https://middlemanapp.com/advanced/dynamic-pages/
